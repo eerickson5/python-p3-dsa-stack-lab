@@ -37,12 +37,10 @@ class Stack:
         return len(self.items) == self.limit
 
     def search(self, target):
-        i = 0
+        i = 1
         for item in self.items:
             if item != target:
                 i += 1
             else:
-                return len(self.items) - 1 - i
+                return len(self.items) - i
         return -1
-        #find target
-        #length - target index
